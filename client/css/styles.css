@@ -1,0 +1,107 @@
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+* {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    font-family: calibri;
+}
+.strike span {
+    text-decoration: line-through;
+    color: #ccc;
+}
+.todos {
+    padding: 20px;
+}
+.todo {
+    padding: 10px;
+    font-size: 21px;
+    border-bottom: 1px solid;
+}
+.todo .btn {
+    margin-left: 5px;
+    width: 72px;
+}
+.todo:hover {
+    background: #e7e7e7;
+}
+@media (max-width: 991px) {
+    .todo .btn {
+        margin-bottom: 10px;
+    }
+    .todo input[type=checkbox] {
+        width: 25px;
+        height: 25px;
+    }
+}
+@media (max-width: 991px) {
+    .todo .btn-warning {
+        margin-top: 10px;
+        margin-left: 0px
+    }
+}
+ 
+@media (max-width: 450px) {
+    .todo .col-xs-8 {
+        width: 85%;
+    }
+    .todo .col-xs-3 {
+        width: 100%;
+        text-align: center;
+        border-top: 1px dashed #aaa;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+}
