@@ -11,13 +11,19 @@
     res.render('index');
   });
  
-  router.get('/api/todos', function(req, res) {
+  /*router.get('/api/todos', function(req, res) {
     db.todos.find(function(err, data) {
       res.json(data);
     });
-  });
+  });*/
+
+  router.get('/cool', function(req, res) {
+    /*db.todos.find(function(err, data) {*/
+      res.render('cool');
+    /*});*/
+  })
  
-  router.post('/api/todos', function(req, res) {
+  /*router.post('/api/todos', function(req, res) {
     db.todos.insert(req.body, function(err, data) {
       res.json(data);
     });
@@ -44,7 +50,7 @@
       res.json(data);
     });
  
-  });
+  });*/
  
   module.exports = router;
  
