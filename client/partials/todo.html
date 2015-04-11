@@ -1,7 +1,9 @@
 <div class="container" ng-controller="TodoCtrl">
     <div class="row col-md-12">
         <div>
-            <input type="text" class="form-control input-lg" placeholder="Enter a Todo" ng-keypress="save($event)" ng-model="todoInput">
+            <!--<input type="text" class="form-control input-lg" placeholder="Enter a destination" ng-keypress="save($event)" ng-model="todoInput">-->
+            <input type="text">
+            <input type = "submit" value = "submit">
         </div>
     </div>
     <div class="row col-md-12 todos">
@@ -21,7 +23,10 @@
                 <input type="button" class="btn btn-info" ng-disabled="todo.isCompleted" class="pull-right" value="Edit" ng-click="isEditable[$index] = true" />
                 <input type="button" class="btn btn-danger" class="pull-right" value="Delete" ng-click="delete($index)" />
             </div>
- 
+ 		
         </div>
     </div>
+     <div>
+            <input type="text" class="form-control input-lg" placeholder="Enter a budget" ng-keypress="save($event)" ng-model="destinationInput">
+        </div>
 </div>
