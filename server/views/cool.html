@@ -1,1 +1,9 @@
 <h1>Hi</h1>
+ <script>
+	var request = new XMLHttpRequest();
+	request.open("GET", "http://api.tripadvisor.com/api/partner/2.0/map/42.33141,-71.099396?key=HackTripAdvisor-ade29ff43aed", false);
+	request.send();
+	console.log(request.status);
+	console.log(request.statusText);
+	console.log(request);
+</script>
